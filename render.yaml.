@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: matilda-bridge-server
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python3 matilda_bridge_server.py"
+    plan: free
